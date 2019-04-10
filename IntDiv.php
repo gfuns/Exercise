@@ -7,7 +7,8 @@ function division($num, $den){
 	//Handles divisibility by 0.
 	//Returns an error when the denominator is zero.
 	if ($den == 0) 
-        return "Error: Denominator (Divisor) should not be 0.";
+        echo "Error: Denominator (Divisor) should not be 0.";
+	return;
 
 		// set range for our result as [left, right].
 		// right is set to infinity to handle the case 
@@ -55,10 +56,9 @@ function division($num, $den){
 
 // Driver
 $num = -6; 
-$den = 5 ; 
+$den = 0 ; 
 echo "Exercise to to implement integer division without the use of the division operator.<br/>";
 echo "Dividend is: ".$num."<br/>";
 echo "Divisor is: ".$den."<br/>";
-
-echo "Qotient is: ".intval(division($num, $den))."<br/>Remainder is: " ; 
+echo "Quotient is: ".intval(division($num, $den)) ; 
 ?> 
