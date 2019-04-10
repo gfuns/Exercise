@@ -53,8 +53,12 @@ function division($num, $den){
 	
 }
 
-// Driver program
-$num = -6; $den = 5 ; 
+// Driver
+$num = -6; 
+$den = 5 ; 
 echo "Exercise to to implement integer division without the use of the division operator.<br/>";
+echo "Dividend is: ".$num."<br/>";
+echo "Divisor is: ".$den."<br/>";
+
 echo "Qotient is: ".intval(division($num, $den))."<br/>Remainder is: " ; 
 ?> 
